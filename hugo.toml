@@ -1,0 +1,25 @@
+baseURL = 'https://robertwetzler.github.io/blog/'
+languageCode = 'en-us'
+title = 'My Blog'
+theme = 'PaperMod'
+
+[params]
+  description = "A simple blog built with Hugo"
+  author = "Your Name"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
