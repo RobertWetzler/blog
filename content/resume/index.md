@@ -16,8 +16,8 @@ type: "resume"
 
 **Lead Engineer & Architect of new Azure Storage Repair Services**, critical infrastructure in enabling Azure Storage's transition to a next-generation hosting platform, supporting a 10x scalability increase
 
-- Designed and built foundational Azure microservice from scratch using modern C# ASP.NET Core, grew to being globally available running across 450+ geodistributed baremetal nodes
-- Grew microservice into distributed system of four services communicating over gRPC offering modern repair, safety, and health APIs for fundamental operations across Azure Storage
+- Designed and built foundational Azure microservice from scratch using modern C# ASP.NET Core, led automated buildout to global availability across 450+ geodistributed baremetal nodes
+- Grew microservice into a distributed system of four services communicating over gRPC offering modern repair, safety, and health APIs for fundamental operations across Azure Storage
 - Implemented stateful services with fault tolerance, upgrade domains, rollback, and OpenTelemetry tracing
 - Spearheaded security designs involving auth/z (delegated OAuth2, RBAC) and auto-renewing certificates
 - Implemented release protocols including automated testing and staged deployments

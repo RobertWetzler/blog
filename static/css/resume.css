@@ -15,8 +15,8 @@
 
 .resume-intro button {
   padding: 0.8em 1.5em;
-  background: var(--primary, #1d7ecc);
-  color: white;
+  background: var(--primary, #1d1e20);
+  color: var(--theme, #fff);
   border: none;
   border-radius: 4px;
   cursor: pointer;
