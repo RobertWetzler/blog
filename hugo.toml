@@ -1,14 +1,24 @@
 baseURL = 'https://robertwetzler.github.io/blog/'
 languageCode = 'en-us'
-title = 'My Blog'
+title = "Robert's Roblog"
 theme = 'PaperMod'
 
 [params]
   description = "A simple blog built with Hugo"
-  author = "Your Name"
+  author = "Robert Wetzler"
   showReadingTime = true
   showShareButtons = true
   showPostNavLinks = true
+
+  [params.homeInfoParams]
+    Title = "Hello! I'm Robert 👋"
+    Content = """
+I'm a passionate software engineer at Microsoft working on Azure Storage. I love building distributed systems, tinkering with robotics and astrophotography, and exploring new technologies.
+
+When I'm not writing code, you might find me working on personal projects like social apps or building camera gimbals that track stars.
+
+**[Check out my resume →](/blog/resume/)**
+"""
 
 [menu]
   [[menu.main]]
@@ -23,3 +33,7 @@ theme = 'PaperMod'
     name = "About"
     url = "/about/"
     weight = 3
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 4

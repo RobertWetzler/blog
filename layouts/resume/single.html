@@ -1,0 +1,11 @@
+{{- define "main" }}
+<link rel="stylesheet" href="{{ "css/resume.css" | relURL }}" media="screen,print">
+<article class="resume-page">
+  <main class="resume">
+    {{ .Content }}
+  </main>
+    <div class="no-print resume-intro">
+    <button onclick="window.print()">Save to PDF</button>
+  </div>
+</article>
+{{- end }}
