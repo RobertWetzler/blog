@@ -10,7 +10,7 @@ I've been exploring using [Hugo](https://gohugo.io/) for my personal site and ha
 
 After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume fully in HTML stood out as, especially I've been pondering a personal site.
 
-Then it hit me, this could be even easier - if Hugo can transform Markdown to HTML, then why not maintain my resume in Markdown too?
+Then it hit me, this could be a bit more streamlined - if Hugo can transform Markdown to HTML, then why not maintain my resume in Markdown?
 
 ### Defining the resume in Markdown
 Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumbersome to write directly. With a Hugo Resume (TM), I just write out:
@@ -52,7 +52,7 @@ This informs Hugo to render the resume page using the above printable CSS, plus 
 ```
 
 ### Maintaining my resume in version control 
-Now I can use my commit history to keep a working record of my resume over the years. Gone are the days of sifting through Google Docs history or saving yearly versions!
+Now I can use my git history to keep a working record of my resume over the years. Gone are the days of sifting through Google Docs history or saving yearly versions!
 
 ### Making my resume "modular"
 I tend to keep various resume pieces on hand, which I mix and match depending on the job I'm applying to. Instead of maintaining these in a massive word document, I can use Hugo shortcodes to compose my resume from reusable pieces. Store each job, project, or skills section as a separate markdown file:
@@ -72,9 +72,11 @@ Then compose your resume by including just the pieces you need:
 ```
 Applying to a robotics company? Swap in `skills-robotics.md` and your robotics side projects. Backend role? Use `skills-backend.md` instead. Now you can create multiple resume variants without duplicating content.
 
-## Want to see it in action? **[Check out my resume →](/blog/resume/)**
+### Want to see it in action? 
+**[Check out my resume →](/blog/resume/)**
 
+(this was all a ruse)
 
-### Thanks for Reading!
+### That's All!
 This is my first blog post, hopefully I'm doing it right. I'm hoping to come back and write up my old projects I think are interesting (putting the "log" in "roblog"). Stay tuned!
 
