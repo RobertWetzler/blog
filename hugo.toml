@@ -7,7 +7,7 @@ theme = 'PaperMod'
   description = "A simple blog built with Hugo"
   author = "Robert Wetzler"
   showReadingTime = true
-  showShareButtons = true
+  showShareButtons = false
   showPostNavLinks = true
 
   [params.homeInfoParams]
