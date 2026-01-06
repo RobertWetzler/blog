@@ -8,12 +8,12 @@ tags: ["blog"]
 
 I've been exploring using [Hugo](https://gohugo.io/) for my personal site and have grown to appreciate how simple it is. Set up a theme, make a Github Action for publishing the site to Github Pages, then simply commit a markdown file for each new post. 
 
-After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume fully in HTML stood out as, especially I've been pondering a personal site.
+After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume fully in HTML had stuck with me - a longliving document like a resume should be kept in version control and be easily composable from various pieces (fine-tuning to specific job postings).
 
-Then it hit me, this could be a bit more streamlined - if Hugo can transform Markdown to HTML, and CSS can style the HTML into a passable PDF, then why not maintain my resume in Markdown?
+Then it hit me, why stop at HTML - if Hugo can transform Markdown to HTML, and CSS can style the HTML into a passable PDF, then why not maintain my resume in Markdown?
 
 ### Defining the resume in Markdown
-Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumbersome to write directly. With a Hugo Resume (TM), I just write out:
+Markdown, the purest form of writing. With a Hugo Resume (TM), I just write out:
 ```
 # Robert Wetzler
 **Seattle, WA** · [github.com/RobertWetzler](https://www.github.com/RobertWetzler)
@@ -23,15 +23,14 @@ Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumb
 Job Description
 ```
 And Hugo will simply render this as a page on your site. Now we need to make it look like a resume...
-### Use CSS rules to look like an actual resume (especially when printed)
-As mentioned in the above blog, we can display the resume however we like on our website but make it printable as a regular PDF when the user clicks "Save as PDF (Ctrl+P)". This is achieved using the CSS [print media type](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing), which applies certain rules specifically when printing.
+### Add CSS so it looks like an actual resume (especially when printed)
+As mentioned in the above blog, we can display the resume however we like on our website but make it printable as a regular PDF when the user clicks "Save as PDF (Ctrl+P)." This is achieved using the CSS [print media type](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing), which applies certain rules specifically when printing.
 
-Most importantly, I can display my resume in dark mode 😎. The Hugo PaperMod theme defines CSS variables like `--entry` (background) and `--primary` (text color) that automatically change based on your light/dark preference. By using these variables in the resume CSS, it inherits the theme's colors:
+Most importantly, I can display my resume in dark mode 😎. By passing a few theme variables to the CSS, we can make the resume inherit dark/light mode colors:
 ```css
 .resume {
   background: var(--entry, #fff);
   color: var(--primary, #000);
-  ...
 ```
 (of course, these aren't used when the resume is printed/saved to PDF)
 ### Add a Hugo Template
@@ -70,7 +69,7 @@ Then compose your resume by including just the pieces you need:
 {{</* resume-piece "project-robotics" */>}}
 {{</* resume-piece "skills-robotics" */>}}
 ```
-Applying to a robotics company? Swap in `skills-robotics.md` and your robotics side projects. Backend role? Use `skills-backend.md` instead. Now you can create multiple resume variants without duplicating content.
+Applying to a robotics company? Swap in `project-robotics` and `skills-robotics`. Backend role? Use `project-backend` and `skills-backend` instead. Now you can create multiple resume variants without copying and pasting around.
 
 ### Want to see it in action? 
 **[Check out my resume →](/blog/resume/)**
