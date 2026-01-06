@@ -1,6 +1,6 @@
 ---
 title: "Writing my Resume in Markdown"
-date: 2026-01-05
+date: 2026-01-06
 draft: false
 tags: ["blog"]
 ---
@@ -8,12 +8,12 @@ tags: ["blog"]
 
 I've been exploring using [Hugo](https://gohugo.io/) for my personal site and have grown to appreciate how simple it is. Set up a theme, make a Github Action for publishing the site to Github Pages, then simply commit a markdown file for each new post. 
 
-After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume in HTML stood out as I've been pondering a personal site.
+After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume fully in HTML stood out as, especially I've been pondering a personal site.
 
-It hit me, this could be even easier - if Hugo can transform Markdown to HTML, then why not maintain my resume in Markdown too?
+Then it hit me, this could be even easier - if Hugo can transform Markdown to HTML, then why not maintain my resume in Markdown too?
 
 ### Defining the resume in Markdown
-Markdown is a joy to write. It basically becomes second nature after a while. Sure, HTML is pretty good, but it can get a bit cumbersome to write directly. With a Hugo Resume (TM), I just write out:
+Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumbersome to write directly. With a Hugo Resume (TM), I just write out:
 ```
 # Robert Wetzler
 **Seattle, WA** · [github.com/RobertWetzler](https://www.github.com/RobertWetzler)
@@ -22,7 +22,7 @@ Markdown is a joy to write. It basically becomes second nature after a while. Su
 ### My Title · *Date*
 Job Description
 ```
-And Hugo will render it as HTMLIt comes back to the original value proposition of Hugo - focus less on formatting, more on writing.
+And Hugo will simply render this as a page on your site. Now we need to make it look like a resume...
 ### Use CSS rules to make it printable and look like an actual resume
 As mentioned in the above blog, we can display the resume however we like on our website but make it printable as a regular PDF when the user clicks "Save as PDF (Ctrl+P)". This is achieved using the CSS [print media type](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing), which applies certain rules specifically when printing.
 
