@@ -10,7 +10,7 @@ I've been exploring using [Hugo](https://gohugo.io/) for my personal site and ha
 
 After setting it up, I was reminded of this great blog post, [Make Your Website Printable with CSS](https://barish.me/blog/make-your-website-printable-with-css/). The author's mention of maintaining their resume fully in HTML stood out as, especially I've been pondering a personal site.
 
-Then it hit me, this could be a bit more streamlined - if Hugo can transform Markdown to HTML, then why not maintain my resume in Markdown?
+Then it hit me, this could be a bit more streamlined - if Hugo can transform Markdown to HTML, and CSS can style the HTML into a passable PDF, then why not maintain my resume in Markdown?
 
 ### Defining the resume in Markdown
 Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumbersome to write directly. With a Hugo Resume (TM), I just write out:
@@ -23,7 +23,7 @@ Markdown is a joy to write. Sure, HTML is pretty good, but it can get a bit cumb
 Job Description
 ```
 And Hugo will simply render this as a page on your site. Now we need to make it look like a resume...
-### Use CSS rules to make it printable and look like an actual resume
+### Use CSS rules to look like an actual resume (especially when printed)
 As mentioned in the above blog, we can display the resume however we like on our website but make it printable as a regular PDF when the user clicks "Save as PDF (Ctrl+P)". This is achieved using the CSS [print media type](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Printing), which applies certain rules specifically when printing.
 
 Most importantly, I can display my resume in dark mode 😎. The Hugo PaperMod theme defines CSS variables like `--entry` (background) and `--primary` (text color) that automatically change based on your light/dark preference. By using these variables in the resume CSS, it inherits the theme's colors:
@@ -33,9 +33,9 @@ Most importantly, I can display my resume in dark mode 😎. The Hugo PaperMod t
   color: var(--primary, #000);
   ...
 ```
-(of course, this gets disabled when the resume is printed/saved to PDF)
+(of course, these aren't used when the resume is printed/saved to PDF)
 ### Add a Hugo Template
-This informs Hugo to render the resume page using the above printable CSS, plus a save to PDF button.
+This informs Hugo to render the resume page using the above CSS, plus a save to PDF button.
 ```html
 {{- define "main" }}
 <link rel="stylesheet" href="{{ "css/resume.css" | relURL }}" media="screen,print">
@@ -52,10 +52,10 @@ This informs Hugo to render the resume page using the above printable CSS, plus 
 ```
 
 ### Maintaining my resume in version control 
-Now I can use my git history to keep a working record of my resume over the years. Gone are the days of sifting through Google Docs history or saving yearly versions!
+Now I can use my git history to keep a working record of my resume over the years. Gone are the days of sifting through Google Docs history or saving yearly version files!
 
 ### Making my resume "modular"
-I tend to keep various resume pieces on hand, which I mix and match depending on the job I'm applying to. Instead of maintaining these in a massive word document, I can use Hugo shortcodes to compose my resume from reusable pieces. Store each job, project, or skills section as a separate markdown file:
+I tend to keep various resume pieces on hand which I mix and match depending on the job I'm applying to. Instead of maintaining these in a massive word document, I can use Hugo shortcodes to compose my resume from reusable pieces. Store each job, project, or skills section as a separate markdown file:
 ```
 content/resume/_pieces/
   job1.md
