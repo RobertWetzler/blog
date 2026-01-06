@@ -10,4 +10,3 @@ draft: false
 ## Contact
 
 - Email: rwetzler779@gmail.com
-- Twitter: 
