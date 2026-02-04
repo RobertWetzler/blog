@@ -78,11 +78,32 @@
   color: var(--primary, #000);
 }
 
+/* Job header: company left, title/date right */
+.resume h2 + h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -2pt;
+  margin-bottom: 2pt;
+}
+
 .resume h3 {
-  font-size: 9.5pt;
-  margin-bottom: 1pt;
-  margin-top: 4pt;
+  font-size: 10.5pt;
+  margin-bottom: 2pt;
+  margin-top: 10pt;
   color: var(--primary, #000);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: normal;
+  border-bottom: 0.25pt solid var(--secondary, #999);
+  padding-bottom: 2pt;
+}
+
+.resume h3 .right {
+  font-weight: normal;
+  font-style: italic;
+  text-align: right;
 }
 
 .resume p {

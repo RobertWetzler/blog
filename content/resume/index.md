@@ -10,71 +10,63 @@ type: "resume"
 
 # Work Experience
 
-## Microsoft — Azure Storage, Seattle, WA
+### **Microsoft — Azure Storage** <span class="right">Software Engineer II · August 2022 – Present</span>
 
-### Software Engineer II · *August 2022 – Present*
-
-**Lead Engineer & Architect of new Azure Storage Repair Services**, critical infrastructure in enabling Azure Storage's transition to a next-generation hosting platform, supporting a 10x scalability increase
+**Lead Engineer & Architect of Azure Storage Repair Services**, critical infrastructure in enabling Azure Storage's transition to a next-generation hosting platform, supporting a 10x scalability increase
 
 - Designed and built foundational Azure microservice from scratch using modern C# ASP.NET Core, led buildout reaching global availability across 450+ geodistributed baremetal nodes
 - Grew microservice into a distributed system of four services communicating over gRPC offering modern repair, safety, and health APIs for fundamental operations across Azure Storage
 - Implemented stateful services with fault tolerance, upgrade domains, rollback, and OpenTelemetry tracing
-- Spearheaded security designs involving auth/z (delegated OAuth2, RBAC) and auto-renewing certificates
+- Spearheaded security designs involving authz (delegated OAuth2, RBAC) and auto-renewing certificates
 - Implemented release protocols including automated testing and staged deployments
 
 **Developed a real-time distributed log search API** reducing search times from 5+ minutes to instantaneous
 
-- Utilized C++ per-node agents that stream results to a C# aggregator server, using a multi-threaded algorithm capable of combining streams at a rate of 100 MB/s to the frontend portal
+- Built C++ per-node agents that stream logs to a C# aggregator server.
+- Implemented high-performance multi-threaded streaming algorithm processing 300 MB/s for real-time frontend display
 
 **Developed synthetics framework** to scan for API issues in production
 
-- Developed API scanner via Swagger that automatically detects critical service failures
+- Developed API scanner via Swagger that automatically alerts of critical service failures in production
 
-### Software Engineer Intern · *May – July 2021*
+### **Microsoft — Azure Storage** <span class="right">Software Engineer Intern · May – July 2021</span>
 
-- Designed and built diagnostics portal for Azure Storage aggregating real-time health data — Angular, C++
+- Designed and built full-stack diagnostics web portal aggregating real-time fleet health data — Angular, TypeScript, C++ backend
 
-## Western Digital, Rochester, MN
+### **Western Digital** <span class="right">Software Engineer Co-Op · January – August 2020</span>
 
-### Software Engineer Co-Op · *January – August 2020*
+- Developed disk testing automation framework to streamline QA workflows — Python
+- Built stress testing scripts for HDDs and SSDs to validate reliability and performance — Python
 
-- Developed a disk testing automation framework for the testing lab — Python
+### **Ohio State University Digital Flagship** <span class="right">Application Developer · January 2019 – 2022</span>
 
-## Ohio State University Digital Flagship, Columbus, OH
-
-### Application Developer · *January 2019 – 2022*
-
-- Developed an iOS app for Ohio State to help students learn about the campus — Unity, C#, & Swift
+- Developed iOS app featuring interactive 3D campus map powered by Mapbox geopspatial data — Unity, C#, Swift
 
 # Software Projects
 
-## Social Media App
+## Full-Stack Social Platform
 *Personal Project (2025)* · [cliq-server.fly.dev](https://cliq-server.fly.dev)
 
-- Privacy-focused social media enabling granular sharing of posts/events via "Circles" with real-time engagement
-- Utilized: React Native, C#, ASP.NET Core, Postgres, Docker, Fly.io, JWT Auth, Typescript, iOS Notifications
+- Built social platform with React Native mobile client and cloud-deployed backend infrastructure.
+- Utilized: React Native, C#, ASP.NET Core, Postgres, Docker, Fly.io, JWT Auth, Typescript, push notifications
 
-## Backpackable Astrophotography Camera
+## Autonomous Star Tracking Gimbal — Embedded + Web
 *Personal Project (2024)*
 
-- Co-developed triple-axis camera gimbal, capable of tracking any star/planet fully offline
-- Utilized: Linux (Hostapd, Systemd), embedded Python server, Javascript client, Raspberry Pi
-
-## Climate Analytics Portal
-*Capstone Project (2022)*
-
-- Developed full-stack dashboard for Ohio State Climatology office for visualizing real-time climate data
-- Utilized: Python, Django, Javascript, ApexCharts.js
+- Built offline-capable triple-axis gimbal that autonomously tracks celestial bodies with precise stepper motor control, real-time celestial coordinate calculations, and web-based interface
+- Tech: Python, JavaScript, REST APIs, Linux, Raspberry Pi, stepper motor control
 
 # Education
 
 ## The Ohio State University
-**B.S. Computer Science Engineering** · *Graduated May 2022* · GPA: 3.9
+**B.S. Computer Science Engineering, AI Specialization** · *Graduated May 2022* · GPA: 3.9
 
 # Qualifications
 
-**Skills**: Primarily backend, cloud, and distributed systems (C#, C/C++, Python, Java, Postgres, React, AWS, Azure)
+**Full-Stack**: React, TypeScript, JavaScript, Angular, Node.js, REST APIs
 
-**Grand Prize** — Ohio State University's Hackathon "HACK OH/IO," 2020 (AI Social-Distancing Detector)
+**Backend & Cloud**: C#, ASP.NET Core, C++, Python, gRPC, Postgres, Docker, Azure, AWS
 
-**Best Designed Award** — Ohio State University's Hackathon "HACK OH/IO," 2018
+**Systems**: Distributed systems, real-time streaming, microservices, CI/CD, observability
+
+**Awards**: Grand Prize — Ohio State HACK OH/IO 2020 · Best Designed — HACK OH/IO 2018
