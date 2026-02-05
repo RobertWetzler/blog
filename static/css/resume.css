@@ -63,19 +63,28 @@
 }
 
 .resume h1 {
-  font-size: 12pt;
+  font-size: 11pt;
   margin-top: 10pt;
   margin-bottom: 4pt;
-  border-bottom: 1px solid var(--primary, #000);
-  padding-bottom: 1pt;
+  border-bottom: none;
+  padding-bottom: 0pt;
   color: var(--primary, #000);
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  font-weight: 600;
 }
 
 .resume h2 {
   font-size: 10pt;
-  margin-top: 6pt;
+  margin-top: 8pt;
   margin-bottom: 2pt;
   color: var(--primary, #000);
+  font-weight: normal;
+}
+
+.resume h2 .normal {
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* Job header: company left, title/date right */

@@ -31,7 +31,7 @@ type: "resume"
 
 ### **Microsoft — Azure Storage** <span class="right">Software Engineer Intern · May – July 2021</span>
 
-- Designed and built full-stack diagnostics web portal aggregating real-time fleet health data — Angular, TypeScript, C++ backend
+- Designed and built full-stack diagnostics web portal aggregating real-time health data — Angular, TypeScript, C++ backend
 
 ### **Western Digital** <span class="right">Software Engineer Co-Op · January – August 2020</span>
 
@@ -40,21 +40,21 @@ type: "resume"
 
 ### **Ohio State University Digital Flagship** <span class="right">Application Developer · January 2019 – 2022</span>
 
-- Developed iOS app featuring interactive 3D campus map powered by Mapbox geopspatial data — Unity, C#, Swift
+- Developed iOS app featuring interactive 3D campus map using Mapbox geopspatial data — Unity, C#, Swift
 
 # Software Projects
 
-## Full-Stack Social Platform
-*Personal Project (2025)* · [cliq-server.fly.dev](https://cliq-server.fly.dev)
+## **Full-Stack Social Platform** · <span class="normal">Personal Project (2025)</span> · [frenssocial.com](https://frenssocial.com)
 
-- Built social platform with React Native mobile client and cloud-deployed backend infrastructure.
-- Utilized: React Native, C#, ASP.NET Core, Postgres, Docker, Fly.io, JWT Auth, Typescript, push notifications
+- Built privacy-focused social platform with 80+ users, featuring React Native mobile client and cloud-deployed backend.
+- Tech: React Native, C#, ASP.NET Core, Postgres, Docker, Fly.io, JWT Auth, Typescript, push notifications
 
-## Autonomous Star Tracking Gimbal — Embedded + Web
-*Personal Project (2024)*
+## **Autonomous Star Tracking Gimbal** · <span class="normal">Personal Project (2024)</span>
 
 - Built offline-capable triple-axis gimbal that autonomously tracks celestial bodies with precise stepper motor control, real-time celestial coordinate calculations, and web-based interface
 - Tech: Python, JavaScript, REST APIs, Linux, Raspberry Pi, stepper motor control
+
+{{< resume-piece "project-crossword" >}}
 
 # Education
 
@@ -65,7 +65,7 @@ type: "resume"
 
 **Full-Stack**: React, TypeScript, JavaScript, Angular, Node.js, REST APIs
 
-**Backend & Cloud**: C#, ASP.NET Core, C++, Python, gRPC, Postgres, Docker, Azure, AWS
+**Backend & Cloud**: Python, Java/Kotlin, Spring Boot, C#, ASP.NET Core, C++, gRPC, Postgres, SQL, ORMs, Docker, Azure, AWS
 
 **Systems**: Distributed systems, real-time streaming, microservices, CI/CD, observability
 

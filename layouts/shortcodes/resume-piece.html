@@ -1,0 +1,3 @@
+{{- $piece := .Get 0 -}}
+{{- $path := printf "content/resume/_pieces/%s.md" $piece -}}
+{{- readFile $path | markdownify -}}
