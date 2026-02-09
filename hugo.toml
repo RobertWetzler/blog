@@ -1,4 +1,4 @@
-baseURL = 'https://robertwetzler.github.io/blog/'
+baseURL = 'https://robertwetzler.github.io/'
 languageCode = 'en-us'
 title = "Robert's Roblog"
 theme = 'PaperMod'
