@@ -47,7 +47,7 @@ type: "resume"
 ## **Full-Stack Social Platform** · <span class="normal">Personal Project (2025)</span> · [frenssocial.com](https://frenssocial.com)
 
 - Built privacy-focused social platform with 80+ users, featuring React Native mobile client and cloud-deployed backend.
-- Tech: React Native, C#, ASP.NET Core, Postgres, Docker, Fly.io, JWT Auth, Typescript, push notifications
+- Tech: React Native, C#, ASP.NET Core, PostgreSQL, Docker, Fly.io, JWT Auth, Typescript, push notifications
 
 ## **Autonomous Star Tracking Gimbal** · <span class="normal">Personal Project (2024)</span>
 
@@ -65,7 +65,7 @@ type: "resume"
 
 **Full-Stack**: React, TypeScript, JavaScript, Angular, Node.js, REST APIs
 
-**Backend & Cloud**: Python, Java/Kotlin, Spring Boot, C#, ASP.NET Core, C++, gRPC, Postgres, SQL, ORMs, Docker, Azure, AWS
+**Backend & Cloud**: Python, Java/Kotlin, Spring Boot, C#, ASP.NET Core, C++, gRPC, PostgreSQL, SQL, ORMs, Docker, Azure, AWS
 
 **Systems**: Distributed systems, real-time streaming, microservices, CI/CD, observability
 
